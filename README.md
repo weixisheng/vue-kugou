@@ -42,12 +42,6 @@ vuejs仿写酷狗音乐webapp
  2. npm install下载依赖
  3. npm run dev
 
-想了解我？
------
-
-[个人简介][3]<br>
-[微博粉我][4]
-
 
   [1]: http://cs003.m2828.com/demo/kugouApp/
   [2]: http://m.kugou.com

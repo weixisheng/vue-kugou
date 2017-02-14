@@ -8,9 +8,9 @@
 
 <script type="es6">
   import headLogo from './head_logo';
-  import headNav from './head_nav'
-  import rankHead from './rank_head'
-  import { mapGetters } from 'vuex'
+  import headNav from './head_nav';
+  import rankHead from './rank_head';
+  import { mapGetters } from 'vuex';
   export default {
     computed: {
       ...mapGetters(['head'])
