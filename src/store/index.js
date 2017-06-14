@@ -11,7 +11,7 @@ const store = new Vuex.Store({
     state: {
         audio: {
             songUrl: '',
-            imgUrl: 'http://m.kugou.com/v3/static/images/index/logo_kugou.png',
+            imgUrl: '/static/default.png',
             title: '',
             singer: '',
             currentLength: 0,

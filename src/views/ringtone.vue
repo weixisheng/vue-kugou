@@ -1,16 +1,17 @@
 <template>
   <div class="container ringtone">
     <mt-cell v-for="(item,index) in songList" :title="item.title" :label="item.desp" @click.native="playAudio(index)">
-      <a :href="item.orderUrl" class="order-img">
-        <img src="../assets/images/order-ring.png">
-        <p>订阅</p>
+      <a :href="item.orderUrl" class="">
+        <!--<img src="../assets/images/order-ring.png">
+        <p>订阅</p>-->
+        <mt-switch>订阅</mt-switch>
       </a>
     </mt-cell>
   </div>
 </template>
 
 <script type="es6">
-  import { Cell, Indicator } from 'mint-ui'
+  import { Cell, Indicator ,Switch} from 'mint-ui'
   import list_rings from '../jsons/list_rings'
   import { INIT } from '../mixins'
   export default {

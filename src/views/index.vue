@@ -24,7 +24,7 @@
 </template>
 
 <script type="es6">
-  import { Swipe, SwipeItem,Indicator,Cell } from 'mint-ui'
+  import { Swipe, SwipeItem,Indicator,Cell ,Toast} from 'mint-ui'
   import list_index from '../jsons/list_index'
   export default{
     data(){
@@ -40,15 +40,20 @@
       get(){
         Indicator.open({
           text: '加载中...',
-          spinnerType: 'snake'
+          spinnerType: 'triple-bounce'
         });
         this.parseData(list_index);
       },
       parseData(data){
         setTimeout(()=> {
           Indicator.close();
+          Toast({
+          message:'加载完成',
+          duration:2000,
+        })
           this.songList = data;
         }, 1000);
+        
       },
       playAudio(index){
         var hash = this.songList[index].hash;
@@ -71,5 +76,6 @@
   .mint-swipe-indicators {
     bottom: 5px !important;
   }
+
 </style>
 
